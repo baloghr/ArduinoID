@@ -1,5 +1,5 @@
-Code in this repository is for reading more or less documented ID bytes from the special section of the AVR chip memory. 
-Based on the the speters code and impreved to read the whole part of the memory, including the Wafer ID and chip location 
+Code in this repository is for reading (more or less documented) ID bytes from the special section of the AVR chip memory. 
+Based on the the 'speters' code and improved to read the whole part of the memory, including the Wafer ID and chip location 
 on the wafer. Seems to be useful for identification of fake ATmega328 chips, where those bytes are usually intact (i.e. unprogrammed, 0xFF).
 
 If you are interested on results of small experiment, here it is: https://senzor.robotika.sk/sensorwiki/index.php/Fake_AVR_chips
@@ -25,4 +25,8 @@ Output for the counterfeit chip is similar to this one (note 0xFF on the Wafer I
             Lot: ⸮X⸮⸮⸮⸮  Wafer: 255  X: 255  Y: 255 (Decimal)
      Fuses: Low: 0xFF  High: 0xDA  Ext: 0xFD  Lock: 0xCF
 ```
+
+For more information, see the paper: 
+
+Balogh, R.: Recognition of the Counterfeit Arduino Chips, Proceedings of the K&I'25 conference. 
 
